@@ -1,0 +1,53 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+}
+
+body{
+    background: linear-gradient(to right, #51adcf, #0f3057);
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, .75);
+
+}
+
+
+
+
+.grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: minmax(150px, auto) repeat(3, 150px);
+}
+
+
+.grid .cell{
+    margin: 0.2rem;
+    cursor: pointer;
+    border: 2px solid white;
+    text-align: center;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    border-radius: 8px;
+    font-size: 50px;
+    padding-top: 35px;
+}
+
+
+.grid .cell:hover{
+    background-color: white;
+}
+
+.grid .cell.x,
+.grid .cell.circle{
+    background-color: white;
+    cursor: not-allowed;
+}
