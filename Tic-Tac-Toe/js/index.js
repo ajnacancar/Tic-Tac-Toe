@@ -8,8 +8,8 @@ const winning_combination = [
     [0, 3, 6],
     [1, 4, 7],
     [2, 5, 8],
-    [0, 5, 8],
-    [2, 5, 6]
+    [0, 4, 8],
+    [2, 4, 6]
 ]
 const cellElements = document.querySelectorAll("[data-cell]");
 const messageWinning = document.querySelector("h1");
@@ -92,7 +92,7 @@ function endGame(draw){
     setTimeout(function(){
         window.location.reload();
 
-    },5000);
+    },500);
 }
 
 
